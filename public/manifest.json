@@ -1,0 +1,18 @@
+{
+  "name": "Financier Premium Finance Tracker",
+  "short_name": "Financier",
+  "description": "An ultra-premium, dark cyberpunk styled, offline-first personal finance tracker with Indian Rupee formatting.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#030712",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

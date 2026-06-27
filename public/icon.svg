@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Premium Cyberpunk Gradients -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+    <!-- Drop Shadows / Glows -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect width="496" height="496" x="8" y="8" rx="120" fill="none" stroke="url(#glowGrad)" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Outer Ambient Radial Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#glowGrad)" stroke-width="2" stroke-dasharray="12 12" stroke-opacity="0.4" />
+
+  <!-- Stylized Geometric Indian Rupee (₹) + Growth Trend Group with Cyber Glow -->
+  <g filter="url(#glow)">
+    <!-- Upward Trend Arrow -->
+    <path d="M 120 380 L 220 280 L 290 330 L 410 180" fill="none" stroke="url(#glowGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 350 180 L 410 180 L 410 240" fill="none" stroke="url(#glowGrad)" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Rupee symbol sitting on top -->
+    <!-- Horizontal bar 1 -->
+    <path d="M 180 160 L 320 160" fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" />
+    <!-- Horizontal bar 2 -->
+    <path d="M 180 210 L 300 210" fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" />
+    <!-- Curved R body and downward slant leg -->
+    <path d="M 230 160 L 230 350" fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" />
+    <path d="M 230 210 C 310 210, 310 290, 230 290" fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" />
+    <path d="M 225 285 L 310 370" fill="none" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round" />
+  </g>
+
+  <!-- Glowing Accent Dots -->
+  <circle cx="410" cy="180" r="14" fill="#22d3ee" filter="url(#glow)" />
+  <circle cx="120" cy="380" r="10" fill="#a78bfa" />
+</svg>

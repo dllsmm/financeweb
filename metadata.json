@@ -1,0 +1,6 @@
+{
+  "name": "Premium Finance Tracker",
+  "description": "An ultra-premium, dark-themed cyberpunk offline-first PWA finance tracker with interactive charts, safe-area bottom navigation, and custom categories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
